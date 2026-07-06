@@ -1,76 +1,283 @@
-# Course Enrollment Analyzer
+<h1 align="center">
+📊 Course Enrollment Analyzer
+</h1>
 
-## Overview
-The **Course Enrollment Analyzer** is a Python script designed to analyze course enrollment data from CSV files. It provides interactive data cleaning, generates various visualizations (up to 10 types), and runs an automated slideshow of the results. This tool is ideal for educators, administrators, or analysts looking to gain insights into enrollment patterns, trends, and distributions.
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&center=true&vCenter=true&width=750&lines=Analyze+Course+Enrollment+Data+Effortlessly;Interactive+Data+Cleaning;Generate+10%2B+Professional+Visualizations;Python+%7C+Pandas+%7C+Matplotlib+%7C+Seaborn" />
+</p>
 
-## Features
-- **Interactive Missing Data Handling**: Choose how to handle missing values (drop, fill with mean/zero/custom value, or skip).
-- **Automatic Column Detection**: Intelligently detects course, enrollment, and time columns based on common naming conventions or data patterns.
-- **Data Manipulation Previews**: Includes examples of grouping, feature engineering (e.g., enrollment levels, normalization), and summary statistics.
-- **Visualization Options**: Supports up to 10 visualization types, including:
-  - Bar charts, pie/donut charts, box plots
-  - Histograms, line/area charts (time-based and course-based)
-  - Scatter plots, bubble charts, heatmaps
-  - Gauge charts (top course share) and geographic maps (if applicable)
-- **Slideshow Mode**: Automatically displays generated charts in a single window with customizable timing and fullscreen option.
-- **Output Saving**: Saves all visualizations, summaries, and data to a dedicated output directory.
-- **Web Integration**: Opens interactive Plotly charts (gauge/map) in the browser for enhanced viewing.
+<p align="center">
 
-## Requirements
-- Python 3.x
-- Libraries: pandas, numpy, matplotlib, seaborn
-- Optional: plotly (for gauge and map visualizations), kaleido (for PNG export of Plotly charts)
+<img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python"/>
 
-## Installation
-1. Ensure Python 3.x is installed on your system.
-2. Install required libraries:
-   ```
-   pip install pandas numpy matplotlib seaborn
-   ```
-3. For optional Plotly features:
-   ```
-   pip install plotly kaleido
-   ```
+<img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas"/>
 
-## Usage
-1. Run the script:
-   ```
-   python course.py
-   ```
-2. Provide the path to your CSV file when prompted (or type 'upload' to paste the path).
-3. The script will:
-   - Load and preview the data.
-   - Auto-detect relevant columns (course, enrollment, time).
-   - Prompt for missing data handling.
-   - Suggest and allow selection of visualizations.
-   - Generate and save outputs to `{csv_filename}_analysis_outputs/`.
-   - Run an automated slideshow of the charts.
-4. After the slideshow, you can choose to view interactive charts in your web browser.
+<img src="https://img.shields.io/badge/Matplotlib-Visualization-orange?style=for-the-badge"/>
 
-## Input Data Format
-- CSV file with columns representing courses, enrollments, and optionally time/geographic data.
-- The script attempts to auto-detect columns, but you can manually specify if needed.
-- Enrollment data should be numeric.
+<img src="https://img.shields.io/badge/Seaborn-Statistical%20Plots-4C72B0?style=for-the-badge"/>
 
-## Output
-- **Directory**: `{csv_filename}_analysis_outputs/` containing:
-  - PNG images of all generated charts.
-  - HTML files for interactive Plotly visualizations.
-  - CSV files with summarized data (total enrollments, grouped summaries).
-- **Slideshow**: Automatic display of charts in a matplotlib window.
-- **Browser**: Interactive gauge and map charts opened in new tabs.
+<img src="https://img.shields.io/badge/Plotly-Interactive-success?style=for-the-badge&logo=plotly"/>
 
-## Examples
-- Analyze enrollment trends over time with line charts.
-- Visualize course popularity with bar and pie charts.
-- Explore correlations between numeric variables with heatmaps and scatter plots.
-- Display geographic distribution if location data is available.
+</p>
 
-## License
-This project is open-source. Feel free to modify and distribute.
+<p align="center">
 
-## Contributing
-Contributions are welcome! Please submit issues or pull requests on the project repository.
+<img src="https://img.shields.io/github/license/vishnu0414/Course-Enrollment-Analyzer?style=flat-square">
 
-## Version
-V2 - Includes enhanced visualization suggestions, single-window slideshow, and improved data handling.
+<img src="https://img.shields.io/github/stars/vishnu0414/Course-Enrollment-Analyzer?style=flat-square">
+
+<img src="https://img.shields.io/github/forks/vishnu0414/Course-Enrollment-Analyzer?style=flat-square">
+
+</p>
+
+---
+
+# 🎯 Overview
+
+The **Course Enrollment Analyzer** is an intelligent Python application that helps analyze course enrollment datasets from CSV files.
+
+It automatically:
+
+✅ Detects important columns
+
+✅ Cleans missing data interactively
+
+✅ Generates professional visualizations
+
+✅ Creates summary reports
+
+✅ Plays an automatic slideshow of all generated charts
+
+Perfect for **students, educators, administrators, and data analysts.**
+
+---
+
+# ✨ Features
+
+### 📂 Smart CSV Loading
+
+- Automatic dataset preview
+- Intelligent column detection
+- Supports custom CSV datasets
+
+---
+
+### 🧹 Interactive Data Cleaning
+
+Choose how to handle missing values.
+
+✔ Drop missing rows
+
+✔ Fill with Mean
+
+✔ Fill with Zero
+
+✔ Fill with Custom Value
+
+✔ Skip Cleaning
+
+---
+
+### 📈 Visualization Dashboard
+
+Generate up to **10 professional charts**
+
+| 📊 Chart | Purpose |
+|-----------|---------|
+| 📊 Bar Chart | Compare enrollments |
+| 🥧 Pie Chart | Distribution |
+| 🍩 Donut Chart | Percentage share |
+| 📈 Line Chart | Trends |
+| 🌊 Area Chart | Time analysis |
+| 📦 Box Plot | Outlier detection |
+| 📉 Histogram | Frequency distribution |
+| 🎯 Scatter Plot | Relationship analysis |
+| 🫧 Bubble Chart | Multi-variable comparison |
+| 🔥 Heatmap | Correlation analysis |
+
+---
+
+### 🤖 Intelligent Analysis
+
+The application automatically detects
+
+- 📚 Course Column
+
+- 👨‍🎓 Enrollment Column
+
+- 📅 Date Column
+
+- 📍 Geographic Data
+
+and recommends suitable visualizations.
+
+---
+
+### 🎬 Automatic Slideshow
+
+After creating charts, the application launches an automated slideshow.
+
+✨ Fullscreen Mode
+
+✨ Adjustable Timer
+
+✨ Smooth Chart Navigation
+
+---
+
+# 📂 Project Structure
+
+```text
+Course-Enrollment-Analyzer
+│
+├── course.py
+├── requirements.txt
+├── README.md
+│
+└── analysis_outputs
+    ├── charts
+    ├── summaries
+    ├── html
+    └── reports
+```
+
+---
+
+# ⚙ Technologies Used
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=python"/>
+
+<img src="https://skillicons.dev/icons?i=vscode"/>
+
+<img src="https://skillicons.dev/icons?i=git"/>
+
+<img src="https://skillicons.dev/icons?i=github"/>
+
+</p>
+
+**Libraries**
+
+- Pandas
+
+- NumPy
+
+- Matplotlib
+
+- Seaborn
+
+- Plotly
+
+- Kaleido
+
+---
+
+# 🚀 Installation
+
+```bash
+git clone https://github.com/vishnu0414/Course-Enrollment-Analyzer.git
+
+cd Course-Enrollment-Analyzer
+
+pip install pandas numpy matplotlib seaborn plotly kaleido
+```
+
+---
+
+# ▶ Run
+
+```bash
+python course.py
+```
+
+---
+
+# 🔄 Workflow
+
+```text
+📂 Upload CSV
+        │
+        ▼
+👀 Preview Dataset
+        │
+        ▼
+🧹 Clean Missing Data
+        │
+        ▼
+📊 Generate Visualizations
+        │
+        ▼
+💾 Save Results
+        │
+        ▼
+🎬 Interactive Slideshow
+```
+
+---
+
+# 📸 Output
+
+The application automatically generates
+
+✅ PNG Charts
+
+✅ HTML Interactive Charts
+
+✅ Summary CSV Files
+
+✅ Statistical Reports
+
+All outputs are saved inside
+
+```
+analysis_outputs/
+```
+
+---
+
+# 💡 Future Improvements
+
+- 🌐 Streamlit Dashboard
+
+- 🤖 AI Chart Recommendation
+
+- 📄 PDF Report Export
+
+- ☁ Cloud Deployment
+
+- 📥 Drag & Drop CSV Upload
+
+- 📊 Real-time Analytics
+
+---
+
+# 🤝 Contributing
+
+Contributions are always welcome.
+
+Fork the repository and submit a Pull Request.
+
+---
+
+# ⭐ Support
+
+If you found this project useful,
+
+<p align="center">
+
+<a href="https://github.com/vishnu0414/Course-Enrollment-Analyzer">
+<img src="https://img.shields.io/badge/⭐%20Star%20This%20Repository-yellow?style=for-the-badge"/>
+</a>
+
+</p>
+
+---
+
+<p align="center">
+
+Made with ❤️ using Python
+
+</p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=120&section=footer"/>
